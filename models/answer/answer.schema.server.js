@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const student = require('../student/student.schema.server')
 const question = require('../question/question.schema.server')
-const answer = mongoose.Schema({
+const answerSchema = mongoose.Schema({
     _id: Number,
     trueFalseAnswer: Boolean,
     multipleChoiceAnswer: Number,
