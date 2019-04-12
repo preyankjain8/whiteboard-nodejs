@@ -8,3 +8,4 @@ const answerSchema = mongoose.Schema({
     student: {type: mongoose.Schema.Types.ObjectId, ref: 'StudentModel'},
     question: {type: mongoose.Schema.Types.ObjectId, ref: 'QuestionModel'}
 }, {collection: 'answers'})
+module.exports = answerSchema;
