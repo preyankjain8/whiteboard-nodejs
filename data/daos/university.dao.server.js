@@ -177,8 +177,8 @@ answerQuestion = (studentId, questionId, answer) =>
         '_id': answer._id,
         trueFalseAnswer: answer.trueFalseAnswer,
         multipleChoiceAnswer: answer.multipleChoiceAnswer,
-        student: mongoose.Schema.Types.ObjectId(studentId),
-        question: mongoose.Schema.Types.ObjectId(questionId)
+        student: studentId,
+        question: questionId
     })
 
 findAllStudents = () =>
