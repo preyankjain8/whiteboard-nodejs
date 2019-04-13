@@ -49,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/answer.service.server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -67,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="102">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -118,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/db.js" />
         <option value="$PROJECT_DIR$/models/user.schema.server.js" />
         <option value="$PROJECT_DIR$/models/user.dao.server.js" />
         <option value="$PROJECT_DIR$/models/user/user.dao.server.js" />
@@ -139,6 +138,7 @@
         <option value="$PROJECT_DIR$/models/answer/answer.schema.server.js" />
         <option value="$PROJECT_DIR$/data/daos/university.dao.server.js" />
         <option value="$PROJECT_DIR$/services/answer.service.server.js" />
+        <option value="$PROJECT_DIR$/data/db.js" />
       </list>
     </option>
   </component>
@@ -247,12 +247,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554962609635</updated>
-      <workItem from="1554962611364" duration="45044000" />
+      <workItem from="1554962611364" duration="45547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45044000" />
+    <option name="totallyTimeSpent" value="45547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -372,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/question.service.server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-525">
@@ -425,6 +418,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
