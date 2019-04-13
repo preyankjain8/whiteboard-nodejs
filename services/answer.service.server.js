@@ -1,13 +1,29 @@
 const universityDao = require('../data/daos/university.dao.server')
 module.exports = function(app){
 
-    app.put('/api/question/:questionId', updateQuestion)
-    app.delete('/api/question/:questionId', deleteQuestion)
-    app.get('/api/question/:questionId', findQuestionById)
-    app.get('/api/question', findAllQuestions)
-    app.post('/api/question', createQuestion)
+    /*app.put('/api/question/:questionId', updateQuestion)
+    app.delete('/api/question/:questionId', deleteQuestion)*/
+    app.get('/api/question/:qid/student/:sid/answer', findAllAnswers)
+    app.get('/api/student/:sid/question/:qid/answer', findAllAnswers)
+    app.post('/api/student/:sid/question/:qid/answer', answerQuestion)
 
-    function createQuestion (req, res){
+    function answerQuestion(req, res) {
+        universityDao.answerQuestion(req.params.sid, req.params.qid, req.body)
+            .then(answer => {
+                res.send(answer)
+            })
+    }
+
+    function findAllAnswers(req, res) {
+        universityDao.findAnswerByStudentAndQuestion(req.params.sid, req.params.qid).then(
+            answers => {
+                res.send(answers)            }
+        )
+    }
+
+
+
+    /*function createQuestion (req, res){
         universityDao.createQuestion(req.body)
             .then(question => {
                 if(!question)
@@ -49,5 +65,5 @@ module.exports = function(app){
                     res.send(question)
             }
         )
-    }
+    }*/
 }

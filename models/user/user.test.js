@@ -1,6 +1,9 @@
 require('../../data/db')()
 const dao = require('./user.dao.server')
 const universityDao = require('../../data/daos/university.dao.server')
+
+//universityDao.truncateDatabase()
+universityDao.populateDatabase();
 /*universityDao.createStudent({
     _id: 123,
     firstName: 'Alice',
@@ -13,19 +16,23 @@ const universityDao = require('../../data/daos/university.dao.server')
 */
 
 
-/*universityDao.createQuestion({
+/*
+universityDao.createQuestion({
     _id: 321,
     question: 'Is the following schema valid?',
     points: 10,
     questionType: 'TRUE_FALSE',
-    choices: null,
-    correct: null,
-    isTrue: false
+    multipleChoice: {
+        choices: null,
+        correct: null
+    },
+    trueFalse: {
+        isTrue: false
+    }
 }).then(question => console.log(question))
 */
-
-universityDao.answerQuestion(123, 321,{
+/*universityDao.answerQuestion(123, 321,{
     _id: 123,
     trueFalseAnswer: true,
     multipleChoiceAnswer: null
-}).then(answer => console.log(answer))
+}).then(answer => console.log(answer))*/
